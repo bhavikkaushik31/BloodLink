@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Medical Emergency Blood Platform Design System
+   Colors inspired by medical trust, urgency, and life-saving mission
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Core medical theme */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Medical blue primary - trustworthy, professional */
+    --primary: 210 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 85% 65%;
+
+    /* Soft medical gray */
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 215 15% 96%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 210 85% 96%;
+    --accent-foreground: 210 85% 25%;
+
+    /* Emergency red for critical alerts */
+    --destructive: 0 85% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --critical: 0 85% 58%;
+    --critical-foreground: 0 0% 100%;
+
+    /* Blood type colors */
+    --blood-universal: 0 85% 58%; /* O- universal donor */
+    --blood-rare: 260 85% 58%; /* Rare types */
+    --blood-common: 210 85% 45%; /* Common types */
+
+    /* Alert urgency levels */
+    --urgent-high: 15 85% 55%; /* High priority orange */
+    --urgent-normal: 45 85% 50%; /* Normal priority yellow */
+    --success: 140 85% 45%; /* Successful match green */
+
+    /* Map and location */
+    --location-primary: 210 85% 45%;
+    --location-radius: 210 85% 85%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 92%;
+    --ring: 210 85% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode for medical platform */
+    --background: 215 25% 8%;
+    --foreground: 215 15% 95%;
+
+    --card: 215 25% 12%;
+    --card-foreground: 215 15% 95%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 215 15% 95%;
+
+    --primary: 210 85% 65%;
+    --primary-foreground: 215 25% 8%;
+    --primary-glow: 210 85% 75%;
+
+    --secondary: 215 25% 18%;
+    --secondary-foreground: 215 15% 85%;
+
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 210 85% 15%;
+    --accent-foreground: 210 85% 85%;
+
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 215 25% 8%;
+    --critical: 0 85% 65%;
+    --critical-foreground: 215 25% 8%;
+
+    --blood-universal: 0 85% 65%;
+    --blood-rare: 260 85% 65%;
+    --blood-common: 210 85% 65%;
+
+    --urgent-high: 15 85% 65%;
+    --urgent-normal: 45 85% 60%;
+    --success: 140 85% 55%;
+
+    --location-primary: 210 85% 65%;
+    --location-radius: 210 85% 25%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 18%;
+    --ring: 210 85% 65%;
+
+    --sidebar-background: 215 25% 10%;
+    --sidebar-foreground: 215 15% 85%;
+    --sidebar-primary: 210 85% 65%;
+    --sidebar-primary-foreground: 215 25% 8%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 215 15% 85%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 210 85% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
